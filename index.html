@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="si">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>3.5GB නොමිලේ</title>
+
+<style>
+/* මූලික පසුබිම නොවෙනස්ව පවතී */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f1f5f9;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ඉදිරිපස කොටස (Container) - මෙහි වර්ණය වෙනස් වේ */
+.container {
+    max-width: 450px;
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.5s ease;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.content {
+    padding: 30px 25px;
+    text-align: center;
+}
+
+h1 {
+    color: #1e293b;
+    font-size: 28px;
+    margin: 0 0 10px 0;
+}
+
+h2 {
+    color: #1e293b;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    font-weight: 700;
+}
+
+/* රේඩියෝ බොත්තම් (Radio Buttons) සැකසුම් */
+.network-options {
+    margin: 25px 0;
+    text-align: left;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    cursor: pointer;
+    background-color: #fff;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.option-item input[type="radio"] {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* ප්‍රධාන බොත්තම */
+.btn {
+    display: block;
+    padding: 14px;
+    background: #0066ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 12px;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+</style>
+</head>
+
+<body>
+
+<div class="container" id="mainContainer">
+
+    <div class="banner">
+        <img src="https://github.com/google266/Data-Packages---Sri-Lanka-Telecoms/blob/main/jpg/ChatGPT%20Image%20Jun%207,%202026,%2005_52_34%20AM.png?raw=true" alt="Offer">
+    </div>
+
+    <div class="content">
+        <h1>🎁 විශේෂ දීමනාව</h1>
+        <h2>3.5GB නොමිලේ</h2>
+        
+        <form action="GB305.html" method="GET">
+            <div class="network-options">
+                
+                <label class="option-item" id="lbl-dialog">
+                    <input type="radio" name="network" value="dialog" onclick="updateFrontend('#fff5f5', '#d32f2f')" required>
+                    Dialog
+                </label>
+
+                <label class="option-item" id="lbl-mobitel">
+                    <input type="radio" name="network" value="mobitel" onclick="updateFrontend('#f0f4ff', '#1a237e')">
+                    Mobitel
+                </label>
+
+                <label class="option-item" id="lbl-hutch">
+                    <input type="radio" name="network" value="hutch" onclick="updateFrontend('#fff9f2', '#ff6d00')">
+                    Hutch
+                </label>
+
+                <label class="option-item" id="lbl-airtel">
+                    <input type="radio" name="network" value="airtel" onclick="updateFrontend('#fff5f5', '#ff3b30')">
+                    Airtel
+                </label>
+
+            </div>
+
+            <button type="submit" class="btn" id="submitBtn">දැන්ම ලබාගන්න</button>
+        </form>
+    </div>
+
+</div>
+
+<script>
+function updateFrontend(containerBg, buttonBg) {
+    // පසුබිම නොවෙනස්ව තබා ඉදිරිපස කොටස් පමණක් වෙනස් කිරීම
+    document.getElementById('mainContainer').style.backgroundColor = containerBg;
+    
+    const btn = document.getElementById('submitBtn');
+    btn.style.background = buttonBg;
+}
+</script>
+
+</body>
+</html>
